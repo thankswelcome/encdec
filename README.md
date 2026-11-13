@@ -5,6 +5,7 @@ gcc -o encdec encdec.c
 or Use other compiler.
 
 ## uses:
+``` uses: ./encdec <enc|dec> <in File> <out File> <key> ```
 - enc: encrypt
 - dec: decrypt
-- write your key at last
+- key: write Your key

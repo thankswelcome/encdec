@@ -2,5 +2,5 @@
 ```bash
 gcc -o encdec encdec.c
 ```
-or Use other compiler
+or Use other compiler.
 

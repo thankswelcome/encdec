@@ -12,6 +12,6 @@ size_t i = 0; while ((byte = fgetc(fin)) != EOF) { unsigned char transfd = (unsi
 
 int main(int argc, char *argv[]) {char *mode = argv[1]; char *inp = argv[2]; char *outp = argv[3]; char *key = argv[4];
 if (argc < 5) { uses(argv[0]); return 1; }
-if (strcmp(mode, "enc") == 0 || strcmp(mode, "dec") == 0) { if (proc(inp, outp, key)) { printf("PASS"); }
+if (strcmp(mode, "enc") == 0 || strcmp(mode, "dec") == 0) { if (proc(inp, outp, key)) { printf("PASS\n"); }
 else { return 1; } }
-else { printf("enc Or dec ?"); uses(argv[0]); return 1; } return 0; }
+else { printf("enc Or dec ? "); uses(argv[0]); return 1; } return 0; }
